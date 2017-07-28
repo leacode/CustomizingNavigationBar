@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D1BB81A1F2AE52800FEDB3F /* CustomTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1BB8191F2AE13100FEDB3F /* CustomTitleViewController.swift */; };
+		6D4173261F2B111200A1A27B /* CustomTitleMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4173251F2B111200A1A27B /* CustomTitleMenuViewController.swift */; };
 		6D7D4B781F2589C3009AA501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D4B771F2589C3009AA501 /* AppDelegate.swift */; };
 		6D7D4B7A1F2589C3009AA501 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D4B791F2589C3009AA501 /* ViewController.swift */; };
 		6D7D4B7F1F2589C3009AA501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D7D4B7E1F2589C3009AA501 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D1BB8191F2AE13100FEDB3F /* CustomTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleViewController.swift; sourceTree = "<group>"; };
+		6D4173251F2B111200A1A27B /* CustomTitleMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleMenuViewController.swift; sourceTree = "<group>"; };
 		6D7D4B741F2589C3009AA501 /* CustomizingNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomizingNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7D4B771F2589C3009AA501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D7D4B791F2589C3009AA501 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D1BB8181F2AE13100FEDB3F /* CustomTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				6D1BB8191F2AE13100FEDB3F /* CustomTitleViewController.swift */,
+				6D4173251F2B111200A1A27B /* CustomTitleMenuViewController.swift */,
+			);
+			path = CustomTitleView;
+			sourceTree = "<group>";
+		};
 		6D7D4B6B1F2589C3009AA501 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +122,7 @@
 				6D7D4B791F2589C3009AA501 /* ViewController.swift */,
 				6D7D4BAC1F259471009AA501 /* Main.storyboard */,
 				6D7D4BA61F259203009AA501 /* CustomRightView */,
+				6D1BB8181F2AE13100FEDB3F /* CustomTitleView */,
 				6D7D4BA71F259221009AA501 /* Resources */,
 			);
 			path = CustomizingNavigationBar;
@@ -286,7 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D7D4B7A1F2589C3009AA501 /* ViewController.swift in Sources */,
+				6D4173261F2B111200A1A27B /* CustomTitleMenuViewController.swift in Sources */,
 				6D7D4B781F2589C3009AA501 /* AppDelegate.swift in Sources */,
+				6D1BB81A1F2AE52800FEDB3F /* CustomTitleViewController.swift in Sources */,
 				6D7D4BB11F25CC30009AA501 /* UIBarButtonItem+Badge.swift in Sources */,
 				6D7D4BA91F2592EC009AA501 /* CustomRightViewController.swift in Sources */,
 			);
