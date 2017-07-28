@@ -23,11 +23,6 @@ class CustomTitleMenuViewController: UITableViewController {
   }
   
   @IBAction func tapTitle(_ sender: Any) {
-    
-    
-    
-    
-    
     self.performSegue(withIdentifier: Constants.presentViewIdentifier, sender: nil)
   }
   
@@ -37,6 +32,11 @@ class CustomTitleMenuViewController: UITableViewController {
       popoverVC.view.backgroundColor = UIColor.brown
       let popover = popoverVC.popoverPresentationController
       popover?.delegate = self
+      
+      UIView.animate(withDuration: 0.3, animations: {
+        self.arrowImageView.layer.transform = CATransform3DMakeRotation(CGFloat.pi, 0, 0, 1.0)
+      })
+      
     } else {
       // Fallback on earlier versions
     }
@@ -49,7 +49,7 @@ class CustomTitleMenuViewController: UITableViewController {
 extension CustomTitleMenuViewController: UIPopoverPresentationControllerDelegate {
   
   func prepareForPopoverPresentation(_ popoverPresentationController: UIPopoverPresentationController) {
-    print(titleView.frame)
+
     popoverPresentationController.sourceRect = CGRect(x: titleView.frame.origin.x, y: 0, width: titleView.frame.size.width, height: 0)
     popoverPresentationController.backgroundColor = UIColor.brown
     
@@ -60,8 +60,15 @@ extension CustomTitleMenuViewController: UIPopoverPresentationControllerDelegate
   }
   
   func popoverPresentationControllerShouldDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) -> Bool {
+    
+    UIView.animate(withDuration: 0.3, animations: {
+      self.arrowImageView.layer.transform = CATransform3DIdentity
+    })
+    
     return true
   }
+  
+  
   
 }
 
